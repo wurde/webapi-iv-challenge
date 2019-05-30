@@ -10,6 +10,12 @@ const helmet = require('helmet')
 const cors = require('cors')
 
 /**
+ * Load environment variables
+ */
+
+require('dotenv').config()
+
+/**
  * Define app
  */
 
