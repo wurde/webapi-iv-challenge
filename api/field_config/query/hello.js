@@ -21,8 +21,8 @@ module.exports = (app) => {
     type: GraphQLString,
     description: "Return basic greeting.",
     resolve: () => {
-      return "Hello, world!"
-    },
+      return (process.env.WELCOME || "Hello, world!")
+    }
   }
 
   /**
