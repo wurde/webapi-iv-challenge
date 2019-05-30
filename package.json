@@ -2,9 +2,12 @@
   "name": "webapi-iv-challenge",
   "version": "0.1.0",
   "description": "This challenge is to deploy an API to heroku.",
-  "main": "index.js",
+  "main": "server/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server/app.js",
+    "start:dev": "nodemon server/app.js",
+    "test": "ava --verbose",
+    "test:watch": "ava --verbose --watch"
   },
   "repository": {
     "type": "git",
@@ -16,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/wurde/webapi-iv-challenge/issues"
   },
-  "homepage": "https://github.com/wurde/webapi-iv-challenge#readme"
+  "homepage": "https://github.com/wurde/webapi-iv-challenge#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-graphql": "^0.8.0",
+    "graphql": "^14.3.1",
+    "helmet": "^3.18.0"
+  }
 }
