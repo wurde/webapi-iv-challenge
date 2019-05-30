@@ -2,7 +2,7 @@
   "name": "webapi-iv-challenge",
   "version": "0.1.0",
   "description": "This challenge is to deploy an API to heroku.",
-  "main": "server/index.js",
+  "main": "server/app.js",
   "scripts": {
     "start": "node server/app.js",
     "start:dev": "nodemon server/app.js",
